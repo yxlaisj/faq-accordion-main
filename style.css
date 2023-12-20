@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'WorkSans';
+	src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+	font-weight:400 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url("./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+	font-weight:400 700;
+	font-style: italic;
+}
+
+:root {
+	/*fonts*/
+	--font-family: 'WorkSans',sans-serif;
+
+	/*colors*/
+	--White: hsl(0, 0%, 100%);
+	--LightPink: hsl(275, 100%, 97%);
+	--GrayishPurple: hsl(292, 16%, 49%);
+	--DarkPurple: hsl(292, 42%, 14%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: var(--font-family);
+	font-size: 1rem;
+	background-image: url("./assets/images/background-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	background-color: var(--LightPink);
+}
+
+.card {
+	width: 600px;
+	height: auto;
+	background-color: var(--White);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 1rem 1rem 1rem 1rem;
+	padding: 40px;
+
+}
+
+.faq {
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.item {
+	margin-bottom: 3rem;
+}
+
+.content > .item:last-child {
+	margin-bottom: 0;
+}
+
+.sub-title{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
